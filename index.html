@@ -12,6 +12,20 @@
     <link rel="stylesheet" href="css/bootstrap.min.css" />
     <!-- Customize CSS -->
     <link rel="stylesheet" href="css/styles.css">
+    <!-- select 2 -->
+    <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
+
+    <style>
+        .select2-container--default .select2-selection--single {
+            height: auto !important;
+            padding: 5px !important;
+        }
+        /* Menyesuaikan tampilan teks opsi Select2 menjadi hitam */
+        .select2-container--default .select2-results__option {
+            color: black !important;
+        }
+    </style>
+
 </head>
 
 <body>
@@ -45,12 +59,39 @@
                 <div class="section-three">
                     <p>What's your name? <span>*</span></p> <br />
                     <div class="input-group mb-3">
-                        <select class="form-select" id="inputGroupSelect01">
-                          <option value="1">One</option>
-                          <option value="2">Two</option>
-                          <option value="3">Three</option>
+                        <select class="form-control js-example-basic-single" id="inputGroupSelect01">
+                            <option value="1">Mobile Developer : Asisten Mentoring Tecnical</option>
+                            <option value="2">Student Relation & Administration</option>
+                            <option value="3">Mobile Developer : Technical Researcher</option>
+                            <option value="4">Android Mobile Development & UIUX Design</option>
+                            <option value="5">Web Development & UIUX Design</option>
+                            <option value="6">IBM Academy : Hybrid Cloud & Red Hat</option>
+                            <option value="7">Seven</option>
+                            <option value="8">Eight</option>
+                            <option value="9">Nine</option>
+                            <option value="10">Ten</option>
+                            <option value="11">Eleven</option>
+                            <option value="12">Twelve</option>
+                            <option value="13">Thirteen</option>
+                            <option value="14">Fourteen</option>
+                            <option value="15">Fifteen</option>
+                            <option value="16">Sixteen</option>
+                            <option value="17">Seventeen</option>
+                            <option value="18">Eighteen</option>
+                            <option value="19">Nineteen</option>
+                            <option value="20">Twenty</option>
+                            <option value="21">Twenty-one</option>
+                            <option value="22">Twenty-two</option>
+                            <option value="23">Twenty-three</option>
+                            <option value="24">Twenty-four</option>
+                            <option value="25">Twenty-five</option>
+                            <option value="26">Twenty-six</option>
+                            <option value="27">Twenty-seven</option>
+                            <option value="28">Twenty-eight</option>
+                            <option value="29">Twenty-nine</option>
+                            <option value="30">Thirty</option>
                         </select>
-                      </div>
+                    </div>
                 </div>
 
                 <!-- FOURTH SECTION -->
@@ -58,12 +99,12 @@
                     <p>asdasdasdasdas dasdas dasd <span>*</span></p> <br />
                     <div class="input-group mb-3">
                         <select class="form-select" id="inputGroupSelect01">
-                          <option selected>Choose...</option>
-                          <option value="1">One</option>
-                          <option value="2">Two</option>
-                          <option value="3">Three</option>
+                            <option selected>Choose...</option>
+                            <option value="1">One</option>
+                            <option value="2">Two</option>
+                            <option value="3">Three</option>
                         </select>
-                      </div>
+                    </div>
                 </div>
 
                 <!-- FIFTH SECTION -->
@@ -163,6 +204,16 @@
 
     <!-- CUSTOMIZE JAVASCRIPT -->
     <script src="js/script.js"></script>
+
+    <!-- select2 -->
+    <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+
+    <script>
+        // In your Javascript (external .js resource or <script> tag)
+        $(document).ready(function () {
+            $('.js-example-basic-single').select2();
+        });
+    </script>
 </body>
 
 </html>
